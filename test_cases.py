@@ -17,3 +17,6 @@ class Calctest(unittest.TestCase):
 
     def test_divide(self):
         self.assertEqual(self.calc_obj.divide(4, 2), 2)
+
+    def test_percentage(self):
+        self.assertEqual(self.calc_obj.percentage(10, 100), 10)
