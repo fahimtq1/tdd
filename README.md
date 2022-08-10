@@ -36,3 +36,7 @@ There are five parts to TDD lifecycle:
 ## Advantages of TDD
 
 - Ensures the code is clean and only the sufficient amount of code required for the application logic is used
+
+## How to run tests in the terminal:
+
+```python -m pytest -v```
