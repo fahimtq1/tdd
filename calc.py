@@ -13,6 +13,8 @@ class SimpleCalc:
 
 
     def divide(self, val1, val2):
+        if val2 == 0:
+            raise ValueError("Can't divide by zero")
         return val1 / val2
 
 

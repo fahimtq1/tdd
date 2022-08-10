@@ -18,6 +18,8 @@ class Calctest(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(self.calc_obj.divide(4, 2), 2)
 
+        self.assertRaises(ValueError, self.calc_obj.divide, 5, 0)
+
     def test_percentage(self):
         self.assertEqual(self.calc_obj.percentage(10, 100), 10)
 
@@ -26,5 +28,3 @@ class Calctest(unittest.TestCase):
 
     def test_year_of_birth(self):
         self.assertEqual(self.calc_obj.year_of_birth(22), 2000)
-
-print(dir(unittest))
