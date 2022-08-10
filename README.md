@@ -24,7 +24,7 @@ There are five parts to TDD lifecycle:
 3. Write the minimum amount of code required for the test to pass
 - Begin building the code for the application
 - Write the least amount needed to pass the unit test
-- The code doesn't need to be extensive, as it is should only be sufficient enough to pass the test
+- The code doesn't need to be extensive, as it should only be sufficient to pass the test
 
 4. Refactor the code
 - Check for redundancies in the code and potential code optimisations 
@@ -35,4 +35,4 @@ There are five parts to TDD lifecycle:
 
 ## Advantages of TDD
 
--
+- Ensures the code is clean and only the sufficient amount of code required for the application logic is used
