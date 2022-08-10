@@ -20,3 +20,11 @@ class Calctest(unittest.TestCase):
 
     def test_percentage(self):
         self.assertEqual(self.calc_obj.percentage(10, 100), 10)
+
+    def test_cm_m(self):
+        self.assertEqual(self.calc_obj.cm_m(1), 0.01)
+
+    def test_year_of_birth(self):
+        self.assertEqual(self.calc_obj.year_of_birth(22), 2000)
+
+print(dir(unittest))
