@@ -1,12 +1,12 @@
-from calc import SimpleCalc
+from calc import SimpleCalc   # inheriting from the calculator script
 import unittest
 import pytest
 
-class Calctest(unittest.TestCase):
+class Calctest(unittest.TestCase):   # creating a class for unit testing
 
-    calc_obj = SimpleCalc()
+    calc_obj = SimpleCalc()   # creating an instance of the of SimpleCalc class
 
-    def test_add(self):
+    def test_add(self):   # creating methods to test each part of the SimpleCalc program
         self.assertEqual(self.calc_obj.add(2, 4), 6)
 
     def test_subtract(self):
@@ -18,7 +18,7 @@ class Calctest(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(self.calc_obj.divide(4, 2), 2)
 
-        self.assertRaises(ValueError, self.calc_obj.divide, 5, 0)
+        self.assertRaises(ValueError, self.calc_obj.divide, 5, 0)   # there are different "assert" methods in unittest 
 
     def test_percentage(self):
         self.assertEqual(self.calc_obj.percentage(10, 100), 10)
